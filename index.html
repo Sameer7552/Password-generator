@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+ </head>
+ <body>
+   <div class="container">
+      <h1 class="text-center mt-7 mb-7" style="color: aliceblue; font-size: 4rem; font-weight: 700;">PASSWORD GENERATOR</h1>
+      <div class="position-relative">
+         <div class="mycard p-8">
+            <input type="text" placeholder="Click the button to generate password" class="mb-5 password" id="pass" readonly>
+            <div class="text-center">
+               <div class="row align-items-center mb-5">
+                 <div class="col">
+                   <button type="submit" class="mybtn" onclick="copyText()">Copy to clipboard</button>
+                 </div>
+                 <div class="col">
+                   <button type="submit" class="mybtn" onclick="generate()">Regenerate</button>
+                 </div>
+               </div>
+
+               <div class="row align-items-center">
+                <div class="col-4">
+                  <form>
+                    <label for="rangeInput">Length:</label>
+                    <input type="text" id="textInput" min="0" max="50" value="0" class="len" oninput="updateTextBar(this.value);">
+                    <input type="range" id="rangeInput" min="0" max="50" step="1" value="0" oninput="updateTextInput(this.value);">
+                  </form>
+                </div>
+
+                <div class="col-2">
+                  <label>
+                    <input type="checkbox" name="charType" value="uppercase" id="uppercase"> <br>Uppercase
+                </label>
+                </div>
+                <div class="col-2">
+                  <label>
+                    <input type="checkbox" name="charType" value="lowercase" id="lowercase"> <br>Lowercase
+                </label>
+                </div>
+                <div class="col-2">
+                  <label>
+                    <input type="checkbox" name="charType" value="special" id="special"> <br>Special Characters
+                </label>
+                </div>
+                <div class="col-2">
+                  <label>
+                    <input type="checkbox" name="charType" value="number" id="number"> <br>Numbers
+                </label>
+        
+                </div>
+              </div>
+             </div>
+         </div>
+       </div>
+   </div>
+   
+    <script src="java.js"></script>
+ </body>
+ </html>

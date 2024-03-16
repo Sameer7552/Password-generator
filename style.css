@@ -1,0 +1,66 @@
+body{
+    margin: 0px !important;
+    padding: 0px !important;
+    background: linear-gradient(180deg, #000428 , #004e92);
+    background-attachment: fixed;
+    height: 100% !important;
+}
+.mycard{
+    background-color: #ffffff28;
+    width: 100%;
+}
+.lenbar{
+    width: 300px;
+    height: 50px;
+}
+.password{
+    width: 100%;
+    border-radius: 50px;
+    height: 60px;
+    border-style: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #ffffffc7;
+}
+::placeholder{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+input[type="range"] {
+    appearance: none;
+    width: 100px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    outline: none; 
+}
+.mybtn{
+    width: 80%;
+    border-radius: 50px;
+    height: 60px;
+    border-style: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #080053; 
+}
+label{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+.len{
+    width: 100px;
+    border-radius: 50px;
+    height: 40px;
+    border-style: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
